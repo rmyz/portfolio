@@ -9,7 +9,7 @@ import {
 } from './styles';
 
 const Layout = () => (
-  <LayoutWrapper>
+  <LayoutWrapper data-testid="layoutWrapper">
     <NavBarWrapper />
     <PresentationWrapper />
     <AboutWrapper />

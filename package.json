@@ -1,16 +1,37 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
+  "author": "rmyz",
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "test": "jest",
+    "test:watch": "npm test -- --watch",
+    "eslint": "./node_modules/.bin/eslint ./src",
+    "stylelint": "./node_modules/.bin/stylelint \"src/**/*.{js,jsx}\"",
+    "format": "npm run prettier -- --write",
+    "prettier": "./node_modules/.bin/prettier \"src/**/*.{js,jsx,css,json}\""
   },
-  "author": "Sergi Romeu",
+  "prettier": "./node_modules/@rmyzdev/react-linter/.prettierrc.js",
+  "eslintConfig": {
+    "extends": "./node_modules/@rmyzdev/react-linter/.eslintrc.js"
+  },
+  "stylelint": {
+    "extends": "./node_modules/@rmyzdev/react-linter/stylelint.config.js"
+  },
   "dependencies": {
-    "next": "^9.2.1",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "styled-components": "^5.0.0"
+    "next": "9.2.1",
+    "prop-types": "15.7.2",
+    "react": "16.12.0",
+    "react-dom": "16.12.0",
+    "styled-components": "5.0.0"
+  },
+  "devDependencies": {
+    "@rmyzdev/react-linter": "1.2.0",
+    "@testing-library/jest-dom": "5.1.0",
+    "@testing-library/react": "9.4.0",
+    "babel-jest": "25.1.0",
+    "jest": "25.1.0"
   }
 }
