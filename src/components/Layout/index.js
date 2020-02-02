@@ -7,10 +7,13 @@ import {
   ProjectsWrapper,
   ContactWrapper,
 } from './styles';
+import NavBar from '../NavBar';
 
 const Layout = () => (
   <LayoutWrapper data-testid="layoutWrapper">
-    <NavBarWrapper />
+    <NavBarWrapper>
+      <NavBar />
+    </NavBarWrapper>
     <PresentationWrapper />
     <AboutWrapper />
     <ProjectsWrapper />

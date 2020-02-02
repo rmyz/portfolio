@@ -7,17 +7,20 @@ export const LayoutWrapper = styled.div`
 `;
 
 export const NavBarWrapper = styled.div`
-  height: 2%;
+  display: flex;
+  position: fixed;
+  top: 0;
+  height: 7vh;
+  width: 100%;
   background-color: black;
-`;
-
-export const PresentationWrapper = styled.div`
-  height: 23%;
-  background-color: red;
 `;
 
 const BaseWrapper = styled.div`
   height: 25%;
+`;
+
+export const PresentationWrapper = styled(BaseWrapper)`
+  background-color: red;
 `;
 
 export const AboutWrapper = styled(BaseWrapper)`
