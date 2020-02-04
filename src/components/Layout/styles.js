@@ -10,9 +10,9 @@ export const NavBarWrapper = styled.div`
   display: flex;
   position: fixed;
   top: 0;
-  height: 7vh;
+  height: 8vh;
   width: 100%;
-  background-color: black;
+  background-color: white;
 `;
 
 const BaseWrapper = styled.div`
