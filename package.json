@@ -40,11 +40,12 @@
     "prop-types": "15.7.2",
     "react": "16.12.0",
     "react-dom": "16.12.0",
-    "styled-components": "5.0.0"
+    "react-scroll": "1.7.16",
+    "styled-components": "5.0.1"
   },
   "devDependencies": {
     "@rmyzdev/react-linter": "1.2.0",
-    "@testing-library/jest-dom": "5.1.0",
+    "@testing-library/jest-dom": "5.1.1",
     "@testing-library/react": "9.4.0",
     "babel-jest": "25.1.0",
     "husky": "4.2.1",
