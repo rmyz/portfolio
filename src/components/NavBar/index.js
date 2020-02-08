@@ -11,9 +11,9 @@ const NavBar = () => {
         <Logo />
       </LogoWrapper>
       <LinksWrapper data-testid="Navbar-LinksWrapper">
-        <Link text="Home" />
-        <Link text="About" />
-        <Link text="Projects" />
+        <Link text="Home" href="/" />
+        <Link text="About" href="#about" />
+        <Link text="Projects" href="#projects" />
       </LinksWrapper>
     </Fragment>
   );

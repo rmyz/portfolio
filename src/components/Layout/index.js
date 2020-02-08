@@ -15,8 +15,8 @@ const Layout = () => (
       <NavBar />
     </NavBarWrapper>
     <PresentationWrapper />
-    <AboutWrapper />
-    <ProjectsWrapper />
+    <AboutWrapper id="about" />
+    <ProjectsWrapper id="projects" />
     <ContactWrapper />
   </LayoutWrapper>
 );
