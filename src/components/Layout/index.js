@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {
   LayoutWrapper,
   NavBarWrapper,
@@ -9,16 +10,21 @@ import {
 } from './styles';
 import NavBar from '../NavBar';
 
-const Layout = () => (
+const Layout = ({ linkedinInfo, githubInfo }) => (
   <LayoutWrapper data-testid="layoutWrapper">
     <NavBarWrapper>
       <NavBar />
     </NavBarWrapper>
     <PresentationWrapper />
-    <AboutWrapper id="about" />
-    <ProjectsWrapper id="projects" />
+    <AboutWrapper id="about" linkedinInfo={linkedinInfo} />
+    <ProjectsWrapper id="projects" githubInfo={githubInfo} />
     <ContactWrapper />
   </LayoutWrapper>
 );
+
+Layout.propTypes = {
+  linkedinInfo: PropTypes.object,
+  githubInfo: PropTypes.object,
+};
 
 export default Layout;
