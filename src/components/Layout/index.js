@@ -24,7 +24,7 @@ const Layout = ({ linkedinInfo, githubInfo }) => (
 
 Layout.propTypes = {
   linkedinInfo: PropTypes.object,
-  githubInfo: PropTypes.object,
+  githubInfo: PropTypes.array,
 };
 
 export default Layout;

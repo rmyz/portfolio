@@ -1,6 +1,6 @@
 import fetch from 'node-fetch';
 
-const genericUrl = 'http://localhost:3026';
+const genericUrl = 'https://portfolio-backend-rmyz.herokuapp.com';
 
 const options = { method: 'GET' };
 
