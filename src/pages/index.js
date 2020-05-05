@@ -1,3 +1,6 @@
+import { Fragment } from 'react';
+import Head from 'next/head';
+
 import Layout from '../components/Layout';
 import { getGithubInfo, getLinkedinInfo } from '../services/backendService';
 
@@ -9,7 +12,15 @@ export async function getServerSideProps() {
 }
 
 const HomePage = props => {
-  return <Layout {...props} />;
+  return (
+    <Fragment>
+      <Head>
+        <title>Sergi Romeu&apos;s Portfolio</title>
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+      </Head>
+      <Layout {...props} />
+    </Fragment>
+  );
 };
 
 export default HomePage;
