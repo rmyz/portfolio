@@ -4,7 +4,7 @@ export const Wrapper = styled.section`
   height: 100%;
   display: flex;
   background: #121212;
-  color: white;
+  color: #ddd;
   margin: 0 calc(20vw) 0 calc(20vw);
   border: 3px solid red;
 `;
