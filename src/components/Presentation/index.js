@@ -1,19 +1,39 @@
 import React, { Fragment } from 'react';
 
 import TwoColumns from '../TwoColumns';
-import { Wrapper, Title, SubTitle } from './styles';
+import SocialLink from '../SocialLink';
+import { GithubIcon, LinkedinIcon, GmailIcon, VSCodeIcon } from '../Icons';
+
+import { Wrapper, Title, SubTitle, IconWrapper, Image } from './styles';
 
 const Presentation = () => {
   const firstColumn = () => {
-    return <img src="/me.png" alt="me" width="400px" />;
+    return <Image src="/me.png" alt="me" />;
   };
+
+  const renderIcons = () => (
+    <IconWrapper>
+      <SocialLink link="https://github.com/rmyz" color="white">
+        <GithubIcon />
+      </SocialLink>
+      <SocialLink link="https://linkedin.com/rmyz" color="grey">
+        <LinkedinIcon />
+      </SocialLink>
+      <SocialLink link="mailto:rmyzdev@gmail.com" color="grey">
+        <GmailIcon />
+      </SocialLink>
+      <SocialLink link="https://howivscode.com/rmyz" color="grey">
+        <VSCodeIcon />
+      </SocialLink>
+    </IconWrapper>
+  );
 
   const secondColumn = () => {
     return (
       <Wrapper>
         <Title>Sergi Romeu</Title>
         <SubTitle>Fullstack Developer</SubTitle>
-        <span>Links Here</span>
+        {renderIcons()}
       </Wrapper>
     );
   };

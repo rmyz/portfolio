@@ -24,3 +24,14 @@ export const SubTitle = styled.h2`
   font-family: Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
   font-size: 20px;
 `;
+
+export const IconWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 40%;
+`;
+
+export const Image = styled.img`
+  max-width: 400px;
+`;
