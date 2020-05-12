@@ -1,5 +1,3 @@
-import fetch from 'node-fetch';
-
 const genericUrl = 'https://portfolio-backend-rmyz.herokuapp.com';
 
 const options = { method: 'GET' };
