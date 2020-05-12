@@ -10,7 +10,8 @@ export const Wrapper = styled.div`
 
 export const Title = styled.h1`
   font-weight: normal;
-  font-family: 'Turbinado', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+  font-family: 'Turbinado', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   font-size: 116px;
   background: #40e0d0;
   background: linear-gradient(to left, #ff0080, #ff8c00, #40e0d0);
