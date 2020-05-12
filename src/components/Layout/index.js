@@ -1,12 +1,18 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import { LayoutWrapper } from './styles';
 import TwoColumns from '../TwoColumns';
-import Presentation from '../Presentation';
 
+import Presentation from '../Presentation';
+import About from '../About';
+
+// eslint-disable-next-line no-unused-vars
 const Layout = ({ linkedinInfo, githubInfo }) => (
   <LayoutWrapper data-testid="layoutWrapper">
     <Presentation />
+    <About />
+    <TwoColumns />
     <TwoColumns />
     <TwoColumns />
   </LayoutWrapper>
