@@ -11,8 +11,10 @@ export const Text = styled.p`
 `;
 
 export const Wrapper = styled.div`
+  display: flex;
   flex-direction: column;
-  height: 60%;
+  justify-content: center;
+  height: 100%;
 `;
 
 export const Title = styled.h1`
