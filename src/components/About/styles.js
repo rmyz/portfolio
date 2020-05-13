@@ -16,8 +16,3 @@ export const Wrapper = styled.div`
   justify-content: center;
   height: 100%;
 `;
-
-export const Title = styled.h1`
-  margin-bottom: 32px;
-  font-size: 16px;
-`;
