@@ -34,5 +34,5 @@ export const IconWrapper = styled.div`
 `;
 
 export const Image = styled.img`
-  max-width: 400px;
+  max-width: 70%;
 `;

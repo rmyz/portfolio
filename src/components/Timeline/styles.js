@@ -12,7 +12,8 @@ export const TimelineItem = styled.li`
 
   :before {
     content: '';
-    background-color: #c00;
+    background-color: #a0aec0;
+    opacity: 0.25;
     position: absolute;
     bottom: -10px;
     top: 10px;
@@ -27,7 +28,7 @@ export const TimelineItem = styled.li`
   :after {
     content: '';
     margin-top: 1px;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' aria-hidden='true' viewBox='0 0 32 32' focusable='false'%3E%3Ccircle stroke='none' fill='%23c00' cx='16' cy='16' r='10'%3E%3C/circle%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' aria-hidden='true' viewBox='0 0 32 32' focusable='false'%3E%3Ccircle stroke='none' fill='%23fff' cx='16' cy='16' r='10'%3E%3C/circle%3E%3C/svg%3E");
     position: absolute;
     left: 0;
     height: 15px;
