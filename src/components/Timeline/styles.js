@@ -9,6 +9,8 @@ export const TimelineItem = styled.li`
   margin: 0;
   padding-bottom: 1em;
   padding-left: 20px;
+  display: flex;
+  flex-direction: column;
 
   :before {
     content: '';

@@ -16,7 +16,7 @@ const Experience = ({ linkedinInfo }) => {
         <Title>
           <WorkIcon /> WORK
         </Title>
-        <Timeline items={positions}></Timeline>
+        <Timeline items={positions} type="WORK"></Timeline>
       </Wrapper>
     );
   };
@@ -28,7 +28,7 @@ const Experience = ({ linkedinInfo }) => {
         <Title>
           <EducationIcon /> EDUCATION
         </Title>
-        <Timeline items={educations}></Timeline>
+        <Timeline items={educations} type="EDUCATION"></Timeline>
       </Wrapper>
     );
   };
