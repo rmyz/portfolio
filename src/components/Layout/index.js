@@ -1,24 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {
-  LayoutWrapper,
-  NavBarWrapper,
-  PresentationWrapper,
-  AboutWrapper,
-  ProjectsWrapper,
-  ContactWrapper,
-} from './styles';
-import NavBar from '../NavBar';
 
+import { LayoutWrapper } from './styles';
+import TwoColumns from '../TwoColumns';
+
+import Presentation from '../Presentation';
+import About from '../About';
+import Experience from '../Experience';
+
+// eslint-disable-next-line no-unused-vars
 const Layout = ({ linkedinInfo, githubInfo }) => (
   <LayoutWrapper data-testid="layoutWrapper">
-    <NavBarWrapper>
-      <NavBar />
-    </NavBarWrapper>
-    <PresentationWrapper />
-    <AboutWrapper id="about" linkedinInfo={linkedinInfo} />
-    <ProjectsWrapper id="projects" githubInfo={githubInfo} />
-    <ContactWrapper />
+    <Presentation />
+    <About />
+    <Experience linkedinInfo={linkedinInfo} />
+    <TwoColumns />
+    <TwoColumns />
   </LayoutWrapper>
 );
 

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "author": "rmyz",
   "scripts": {
-    "dev": "next",
+    "dev": "rimraf ./.next && next",
     "build": "next build",
     "start": "next start",
     "test": "jest",
@@ -36,8 +36,7 @@
     ]
   },
   "dependencies": {
-    "next": "9.3.6",
-    "node-fetch": "2.6.0",
+    "next": "9.4.0",
     "prop-types": "15.7.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
@@ -45,12 +44,14 @@
     "styled-components": "5.1.0"
   },
   "devDependencies": {
-    "@rmyzdev/react-linter": "1.3.1",
-    "@testing-library/jest-dom": "5.5.0",
-    "@testing-library/react": "10.0.3",
-    "babel-jest": "25.5.1",
+    "@rmyzdev/react-linter": "2.0.0",
+    "@testing-library/jest-dom": "5.7.0",
+    "@testing-library/react": "10.0.4",
+    "babel-jest": "26.0.1",
+    "babel-plugin-styled-components": "1.10.7",
     "husky": "4.2.5",
-    "jest": "25.5.2",
-    "lint-staged": "10.2.0"
+    "jest": "26.0.1",
+    "lint-staged": "10.2.2",
+    "rimraf": "3.0.2"
   }
 }
