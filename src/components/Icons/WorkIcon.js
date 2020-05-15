@@ -1,12 +1,5 @@
 const WorkIcon = () => (
-  <svg
-    version="1.1"
-    viewBox="0 0 512 512"
-    style={{ enableBackground: 'new 0 0 512 512' }}
-    xmlSpace="preserve"
-    height="13"
-    width="13"
-  >
+  <svg viewBox="0 0 512 512" style={{ enableBackground: 'new 0 0 512 512' }} height="13" width="13">
     <path
       style={{ fill: '#9BA7AF' }}
       d="M360.727,98.909H345.6l-13.964-36.073c-5.818-12.8-18.618-22.109-32.582-22.109h-84.945
