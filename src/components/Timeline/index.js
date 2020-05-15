@@ -1,18 +1,34 @@
 import PropTypes from 'prop-types';
-import { Wrapper, TimelineItem } from './styles';
+import {
+  Wrapper,
+  TimelineItem,
+  TimelineTitle,
+  TimelinePosition,
+  TimelineLocation,
+  TimelineDescription,
+} from './styles';
+import { LocationIcon } from '../Icons';
 
 const Timeline = ({ items, type }) => {
   const renderWork = () => {
     return items.map((item, key) => (
       <TimelineItem key={key}>
-        <span>{item?.companyName}</span>
-        <span>
-          {item?.title} ({item?.date1})
-        </span>
-        <span>Location: {item.location}</span>
-        <span>Methodologies: {item?.description?.methodologies?.join(', ')}</span>
-        <span>Back-end: {item?.description?.backend?.join(', ')}</span>
-        <span>Front-end: {item?.description?.frontend?.join(', ')}</span>
+        <TimelineTitle>{item?.companyName}</TimelineTitle>
+        <TimelinePosition>
+          {item?.title} <i>({item?.date1})</i>
+        </TimelinePosition>
+        <TimelineLocation>
+          <LocationIcon /> {item.location}
+        </TimelineLocation>
+        <TimelineDescription>
+          <b>Methodologies:</b> {item?.description?.methodologies?.join(', ')}
+        </TimelineDescription>
+        <TimelineDescription>
+          <b>Backend:</b> {item?.description?.backend?.join(', ')}
+        </TimelineDescription>
+        <TimelineDescription>
+          <b>Frontend:</b> {item?.description?.frontend?.join(', ')}
+        </TimelineDescription>
       </TimelineItem>
     ));
   };
@@ -20,12 +36,14 @@ const Timeline = ({ items, type }) => {
   const renderEducation = () => {
     return items.map((item, key) => (
       <TimelineItem key={key}>
-        <span>{item?.degree}</span>
-        {item?.fieldOfStudy && <span>{item?.fieldOfStudy}</span>}
-        <span>
-          ({item?.startDate} - {item?.endDate})
-        </span>
-        <span>{item?.title}</span>
+        <TimelineTitle>{item?.degree}</TimelineTitle>
+        <TimelinePosition>{item?.title}</TimelinePosition>
+        {item?.fieldOfStudy && <TimelineLocation>{item?.fieldOfStudy}</TimelineLocation>}
+        <TimelineLocation>
+          <i>
+            {item?.startDate} - {item?.endDate}
+          </i>
+        </TimelineLocation>
       </TimelineItem>
     ));
   };
