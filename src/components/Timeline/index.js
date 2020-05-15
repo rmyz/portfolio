@@ -1,4 +1,7 @@
 import PropTypes from 'prop-types';
+
+import { LocationIcon } from '../Icons';
+
 import {
   Wrapper,
   TimelineItem,
@@ -7,7 +10,6 @@ import {
   TimelineLocation,
   TimelineDescription,
 } from './styles';
-import { LocationIcon } from '../Icons';
 
 const Timeline = ({ items, type }) => {
   const renderWork = () => {
