@@ -49,7 +49,7 @@ export const HeaderWrapper = styled.div`
 `;
 
 export const LanguageWrapper = styled.p`
-  margin: 0;
+  margin: 8px 0 0 0;
   font-size: 14px;
 `;
 
