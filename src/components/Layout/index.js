@@ -7,14 +7,14 @@ import TwoColumns from '../TwoColumns';
 import Presentation from '../Presentation';
 import About from '../About';
 import Experience from '../Experience';
+import Projects from '../Projects';
 
-// eslint-disable-next-line no-unused-vars
 const Layout = ({ linkedinInfo, githubInfo }) => (
   <LayoutWrapper data-testid="layoutWrapper">
     <Presentation />
     <About />
     <Experience linkedinInfo={linkedinInfo} />
-    <TwoColumns />
+    <Projects githubInfo={githubInfo} />
     <TwoColumns />
   </LayoutWrapper>
 );
