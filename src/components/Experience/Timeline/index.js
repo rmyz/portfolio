@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-import { LocationIcon } from '../Icons';
+import { LocationIcon } from '../../shared/Icons';
 
 import {
   Wrapper,

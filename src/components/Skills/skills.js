@@ -7,7 +7,7 @@ import {
   WebpackIcon,
   CloudIcon,
   DockerIcon,
-} from '../Icons';
+} from '../shared/Icons';
 
 export default [
   {

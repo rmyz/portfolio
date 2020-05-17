@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
 
-import TwoColumns from '../TwoColumns';
-import { WorkIcon, EducationIcon } from '../Icons';
-import Timeline from '../Timeline';
-import Title from '../Title';
+import TwoColumns from '../shared/TwoColumns';
+import { WorkIcon, EducationIcon } from '../shared/Icons';
+import Title from '../shared/Title';
 
+import Timeline from './Timeline';
 import { Wrapper } from './styles';
 
 const Experience = ({ linkedinInfo }) => {

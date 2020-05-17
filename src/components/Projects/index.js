@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
 import dayjs from 'dayjs';
 
-import Title from '../Title';
-import OneColumn from '../OneColumn';
-import { ProjectsIcon, StarIcon, PencilIcon } from '../Icons';
+import Title from '../shared/Title';
+import OneColumn from '../shared/OneColumn';
+import { ProjectsIcon, StarIcon, PencilIcon } from '../shared/Icons';
 
 import {
   ProjectsWrapper,

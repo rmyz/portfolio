@@ -1,9 +1,7 @@
-import React, { Fragment } from 'react';
+import TwoColumns from '../shared/TwoColumns';
+import { GithubIcon, LinkedinIcon, GmailIcon, VSCodeIcon } from '../shared/Icons';
 
-import TwoColumns from '../TwoColumns';
-import SocialLink from '../SocialLink';
-import { GithubIcon, LinkedinIcon, GmailIcon, VSCodeIcon } from '../Icons';
-
+import SocialLink from './SocialLink';
 import { Wrapper, Title, SubTitle, IconWrapper, Image } from './styles';
 
 const Presentation = () => {
@@ -39,15 +37,13 @@ const Presentation = () => {
   };
 
   return (
-    <Fragment>
-      <TwoColumns
-        id="presentation"
-        firstColumnWidth="45%"
-        secondColumnWidth="55%"
-        firstColumn={firstColumn()}
-        secondColumn={secondColumn()}
-      />
-    </Fragment>
+    <TwoColumns
+      id="presentation"
+      firstColumnWidth="45%"
+      secondColumnWidth="55%"
+      firstColumn={firstColumn()}
+      secondColumn={secondColumn()}
+    />
   );
 };
 
