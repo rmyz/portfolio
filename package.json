@@ -6,7 +6,7 @@
     "dev": "rimraf ./.next && next",
     "build": "next build",
     "start": "next start",
-    "test": "jest",
+    "test": "echo no test",
     "test:watch": "npm test -- --watch",
     "eslint": "./node_modules/.bin/eslint ./src",
     "stylelint": "./node_modules/.bin/stylelint \"src/**/*.{js,jsx}\"",
