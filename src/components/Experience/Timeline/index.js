@@ -1,53 +1,56 @@
 import PropTypes from 'prop-types';
 
-import { LocationIcon } from '../../shared/Icons';
-
-import {
-  Wrapper,
-  TimelineItem,
-  TimelineTitle,
-  TimelinePosition,
-  TimelineLocation,
-  TimelineDescription,
-} from './styles';
+import TimelineItemWork from './TimelineItemWork';
+import TimelineItemEducation from './TimelineItemEducation';
+import { Wrapper } from './styles';
 
 const Timeline = ({ items, type }) => {
+  const joinArray = array => array.join(', ');
+
   const renderWork = () => {
-    return items.map((item, key) => (
-      <TimelineItem key={key}>
-        <TimelineTitle>{item?.companyName}</TimelineTitle>
-        <TimelinePosition>
-          {item?.title} <i>({item?.date1})</i>
-        </TimelinePosition>
-        <TimelineLocation>
-          <LocationIcon /> {item.location}
-        </TimelineLocation>
-        <TimelineDescription>
-          <b>Methodologies:</b> {item?.description?.methodologies?.join(', ')}
-        </TimelineDescription>
-        <TimelineDescription>
-          <b>Backend:</b> {item?.description?.backend?.join(', ')}
-        </TimelineDescription>
-        <TimelineDescription>
-          <b>Frontend:</b> {item?.description?.frontend?.join(', ')}
-        </TimelineDescription>
-      </TimelineItem>
-    ));
+    return items.map((item, key) => {
+      const {
+        companyName,
+        title,
+        date1,
+        location,
+        description: { methodologies, backend, frontend },
+      } = item;
+
+      const formattedMethodologies = joinArray(methodologies);
+      const formattedBackend = joinArray(backend);
+      const formattedFrontend = joinArray(frontend);
+
+      return (
+        <TimelineItemWork
+          companyName={companyName}
+          title={title}
+          date={date1}
+          location={location}
+          methodologies={formattedMethodologies}
+          backend={formattedBackend}
+          frontend={formattedFrontend}
+          key={key}
+        />
+      );
+    });
   };
 
   const renderEducation = () => {
-    return items.map((item, key) => (
-      <TimelineItem key={key}>
-        <TimelineTitle>{item?.degree}</TimelineTitle>
-        <TimelinePosition>{item?.title}</TimelinePosition>
-        {item?.fieldOfStudy && <TimelineLocation>{item?.fieldOfStudy}</TimelineLocation>}
-        <TimelineLocation>
-          <i>
-            {item?.startDate} - {item?.endDate}
-          </i>
-        </TimelineLocation>
-      </TimelineItem>
-    ));
+    return items.map((item, key) => {
+      const { degree, title, fieldOfStudy, startDate, endDate } = item;
+
+      return (
+        <TimelineItemEducation
+          degree={degree}
+          school={title}
+          fieldOfStudy={fieldOfStudy}
+          startDate={startDate}
+          endDate={endDate}
+          key={key}
+        />
+      );
+    });
   };
 
   const renderType = {

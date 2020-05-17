@@ -4,7 +4,7 @@ export const Wrapper = styled.ol`
   list-style-type: none;
 `;
 
-export const TimelineItem = styled.li`
+export const ItemWrapper = styled.li`
   position: relative;
   margin: 0;
   padding-bottom: 2em;
@@ -41,23 +41,4 @@ export const TimelineItem = styled.li`
 export const BaseSpan = styled.span`
   margin-bottom: 8px;
   line-height: 1.625;
-`;
-
-export const TimelineTitle = styled(BaseSpan)`
-  font-weight: 500;
-  font-size: 24px;
-`;
-
-export const TimelinePosition = styled(BaseSpan)`
-  font-weight: 300;
-  font-size: 18px;
-`;
-
-export const TimelineLocation = styled(BaseSpan)`
-  font-weight: 500;
-  font-size: 14px;
-`;
-
-export const TimelineDescription = styled(BaseSpan)`
-  font-size: 14px;
 `;
