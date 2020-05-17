@@ -1,8 +1,10 @@
 import styled from 'styled-components';
 
-export const LayoutWrapper = styled.div`
+export const Wrapper = styled.section`
   display: flex;
   flex-direction: column;
-  height: calc(100vh * 7);
+  height: 100%;
+  margin: 0 calc(15vw) 0 calc(15vw);
   background: #121212;
+  color: #ddd;
 `;

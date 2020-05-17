@@ -10,6 +10,15 @@ import LocationIcon from './LocationIcon';
 import ProjectsIcon from './ProjectsIcon';
 import StarIcon from './StarIcon';
 import PencilIcon from './PencilIcon';
+import SkillsIcon from './SkillsIcon';
+import WebDesignIcon from './WebDesignIcon';
+import ReactIcon from './ReactIcon';
+import NodeIcon from './NodeIcon';
+import WebpackIcon from './WebpackIcon';
+import JestIcon from './JestIcon';
+import DatabaseIcon from './DatabaseIcon';
+import CloudIcon from './CloudIcon';
+import DockerIcon from './DockerIcon';
 
 export {
   GithubIcon,
@@ -24,4 +33,13 @@ export {
   ProjectsIcon,
   StarIcon,
   PencilIcon,
+  SkillsIcon,
+  WebDesignIcon,
+  ReactIcon,
+  NodeIcon,
+  WebpackIcon,
+  JestIcon,
+  DatabaseIcon,
+  CloudIcon,
+  DockerIcon,
 };
