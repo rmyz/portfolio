@@ -11,16 +11,16 @@ const Presentation = () => {
 
   const renderIcons = () => (
     <IconWrapper>
-      <SocialLink link="https://github.com/rmyz" color="white">
+      <SocialLink link="https://github.com/rmyz" color="hsla(0,0%,50.2%,0.2)">
         <GithubIcon />
       </SocialLink>
-      <SocialLink link="https://linkedin.com/rmyz" color="grey">
+      <SocialLink link="https://linkedin.com/rmyz" color="hsla(0,0%,50.2%,0.2)">
         <LinkedinIcon />
       </SocialLink>
-      <SocialLink link="mailto:rmyzdev@gmail.com" color="grey">
+      <SocialLink link="mailto:rmyzdev@gmail.com" color="hsla(0,0%,50.2%,0.2)">
         <GmailIcon />
       </SocialLink>
-      <SocialLink link="https://howivscode.com/rmyz" color="grey">
+      <SocialLink link="https://howivscode.com/rmyz" color="hsla(0,0%,50.2%,0.2)">
         <VSCodeIcon />
       </SocialLink>
     </IconWrapper>
