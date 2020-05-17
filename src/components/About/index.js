@@ -2,7 +2,7 @@ import TwoColumns from '../shared/TwoColumns';
 import { AboutMeIcon, AboutMeTitleIcon } from '../shared/Icons';
 import Title from '../shared/Title';
 
-import aboutMe from './aboutMe';
+import aboutMe from './aboutData';
 import { TextWrapper, Text, Wrapper } from './styles';
 
 const About = () => {
