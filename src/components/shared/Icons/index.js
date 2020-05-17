@@ -19,6 +19,8 @@ import JestIcon from './JestIcon';
 import DatabaseIcon from './DatabaseIcon';
 import CloudIcon from './CloudIcon';
 import DockerIcon from './DockerIcon';
+import AboutPortfolioIcon from './AboutPortfolioIcon';
+import AboutPortfolioTitleIcon from './AboutPortfolioTitleIcon';
 
 export {
   GithubIcon,
@@ -42,4 +44,6 @@ export {
   DatabaseIcon,
   CloudIcon,
   DockerIcon,
+  AboutPortfolioIcon,
+  AboutPortfolioTitleIcon,
 };

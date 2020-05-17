@@ -6,6 +6,7 @@ import Experience from '../Experience';
 import Projects from '../Projects';
 import Skills from '../Skills';
 import TwoColumns from '../shared/TwoColumns';
+import AboutPortfolio from '../AboutPortfolio';
 
 import { LayoutWrapper } from './styles';
 
@@ -16,7 +17,7 @@ const Layout = ({ linkedinInfo, githubInfo }) => (
     <Experience linkedinInfo={linkedinInfo} />
     <Skills />
     <Projects githubInfo={githubInfo} />
-    <TwoColumns />
+    <AboutPortfolio />
     <TwoColumns />
   </LayoutWrapper>
 );
