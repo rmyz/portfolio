@@ -2,10 +2,10 @@ import PropTypes from 'prop-types';
 import dayjs from 'dayjs';
 
 import Title from '../Title';
+import OneColumn from '../OneColumn';
 import { ProjectsIcon, StarIcon, PencilIcon } from '../Icons';
 
 import {
-  Wrapper,
   ProjectsWrapper,
   ProjectWrapper,
   ProjectName,
@@ -42,12 +42,12 @@ const Projects = ({ githubInfo }) => {
   };
 
   return (
-    <Wrapper>
+    <OneColumn>
       <Title>
         <ProjectsIcon /> PROJECTS
       </Title>
       <ProjectsWrapper>{renderProjects()}</ProjectsWrapper>
-    </Wrapper>
+    </OneColumn>
   );
 };
 
