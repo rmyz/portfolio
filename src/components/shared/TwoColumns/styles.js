@@ -5,8 +5,6 @@ const getWrapperBorder = ({ devMode }) => devMode && `border: 3px solid red;`;
 export const Wrapper = styled.section`
   height: 100%;
   display: flex;
-  background: #121212;
-  color: #ddd;
   margin: 0 calc(15vw) 0 calc(15vw);
 
   ${props => getWrapperBorder(props)}
