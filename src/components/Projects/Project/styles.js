@@ -3,11 +3,16 @@ import styled from 'styled-components';
 export const Wrapper = styled.div`
   width: 45%;
   display: flex;
-  flex-direction: column;
   padding: 16px 16px 8px;
-  margin-bottom: 32px;
+  margin: 16px;
   border: 0.5px solid hsla(0, 0%, 50.2%, 0.1);
   border-radius: 10px;
+`;
+
+export const TextWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 `;
 
 export const Name = styled.a`
