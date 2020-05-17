@@ -13,6 +13,8 @@ export const Wrapper = styled.div`
 export const Name = styled.a`
   font-size: 18px;
   color: #ddd;
+  font-weight: 500;
+  text-decoration: none;
 
   :visited {
     color: #ddd;
