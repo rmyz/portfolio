@@ -15,8 +15,8 @@ const Layout = ({ linkedinInfo, githubInfo }) => (
     <Presentation />
     <About />
     <Experience linkedinInfo={linkedinInfo} />
-    <Projects githubInfo={githubInfo} />
     <Skills />
+    <Projects githubInfo={githubInfo} />
     <TwoColumns />
     <TwoColumns />
   </LayoutWrapper>
