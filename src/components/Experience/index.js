@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
 
-import TwoColumns from '../TwoColumns';
-import { WorkIcon, EducationIcon } from '../Icons';
-import Timeline from '../Timeline';
-import Title from '../Title';
+import TwoColumns from '../shared/TwoColumns';
+import { WorkIcon, EducationIcon } from '../shared/Icons';
+import Title from '../shared/Title';
 
+import Timeline from './Timeline';
 import { Wrapper } from './styles';
 
 const Experience = ({ linkedinInfo }) => {
@@ -16,7 +16,7 @@ const Experience = ({ linkedinInfo }) => {
         <Title>
           <WorkIcon /> WORK
         </Title>
-        <Timeline items={positions} type="WORK"></Timeline>
+        <Timeline items={positions} type="WORK" />
       </Wrapper>
     );
   };
@@ -28,7 +28,7 @@ const Experience = ({ linkedinInfo }) => {
         <Title>
           <EducationIcon /> EDUCATION
         </Title>
-        <Timeline items={educations} type="EDUCATION"></Timeline>
+        <Timeline items={educations} type="EDUCATION" />
       </Wrapper>
     );
   };

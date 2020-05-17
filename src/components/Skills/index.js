@@ -1,8 +1,8 @@
-import OneColumn from '../OneColumn';
-import Title from '../Title';
-import { SkillsIcon } from '../Icons';
+import OneColumn from '../shared/OneColumn';
+import Title from '../shared/Title';
+import { SkillsIcon } from '../shared/Icons';
 
-import skills from './skills';
+import skills from './skillsData';
 import Skill from './Skill';
 import { SkillsWrapper } from './styles';
 
