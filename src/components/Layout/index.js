@@ -8,6 +8,7 @@ import Presentation from '../Presentation';
 import About from '../About';
 import Experience from '../Experience';
 import Projects from '../Projects';
+import Skills from '../Skills';
 
 const Layout = ({ linkedinInfo, githubInfo }) => (
   <LayoutWrapper data-testid="layoutWrapper">
@@ -15,6 +16,8 @@ const Layout = ({ linkedinInfo, githubInfo }) => (
     <About />
     <Experience linkedinInfo={linkedinInfo} />
     <Projects githubInfo={githubInfo} />
+    <Skills />
+    <TwoColumns />
     <TwoColumns />
   </LayoutWrapper>
 );
