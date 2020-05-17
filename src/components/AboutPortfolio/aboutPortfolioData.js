@@ -1,8 +1,6 @@
 export default [
-  'Hey There!',
-  `I'm Sergi Romeu, and I was born, raised, and currently living in Barcelona, Catalonia, Spain.`,
-  'Since I was a kid, I loved computers and everything related to technology, so when I was able to choose a career path, I went all-in with Software Development. Besides programming, I also like all kinds of music, DJ, gaming, sea-diving.',
-  'I define myself as a friendly guy, team player, responsible, and perfectionist.',
-  `One of the things I dealt with is having an updated CV to apply to jobs, so that's one of the reasons I created this website. I wanted something that would be easy to update over time, and also a challenge to create a small project to learn about other technologies I am not used with.`,
-  `The other main reason is the possibility to skip the "technical test" when applying to a company, as nowadays, there are many companies that expect you to invest some days just to know if you are "worth it" for them, so having something reliable to prove my skills is the objective.`,
+  'This website is built with the latest web technologies and code standards, everything being open-source.',
+  `The Frontend part is a Progressive Web App, done with Next.js, a React framework to build server-side rendering apps, using styled-components for the styling and Jest with React Testing Library for the testing.`,
+  `On the other hand, the Backend is an Express server, that retrieves data from Github's GraphQL API, uses puppeteer, a web scraper, to get information from my Linkedin profile, and then saves it to Firebase to be able to retrieve it faster, the testing is also done with Jest.`,
+  'Last part and probably my favorite, the infrastructure, both projects have a TravisCI pipeline, that triggers on every pull request or merge into the master branch, that deploys to Vercel, for the Frontend, and Heroku for my Node.js server.',
 ];

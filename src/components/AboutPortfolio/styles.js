@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const TextWrapper = styled.span`
   text-align: justify;
   white-space: break-spaces;
+  margin-right: 48px;
 `;
 
 export const Text = styled.p`
