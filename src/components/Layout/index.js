@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 
+import NavBar from '../NavBar';
 import Presentation from '../Presentation';
 import About from '../About';
 import Experience from '../Experience';
@@ -11,15 +12,18 @@ import AboutPortfolio from '../AboutPortfolio';
 import { LayoutWrapper } from './styles';
 
 const Layout = ({ linkedinInfo, githubInfo }) => (
-  <LayoutWrapper data-testid="layoutWrapper">
-    <Presentation />
-    <About />
-    <Experience linkedinInfo={linkedinInfo} />
-    <Skills />
-    <Projects githubInfo={githubInfo} />
-    <AboutPortfolio />
-    <TwoColumns />
-  </LayoutWrapper>
+  <>
+    <NavBar />
+    <LayoutWrapper data-testid="layoutWrapper">
+      <Presentation />
+      <About id="aboutMe" />
+      <Experience linkedinInfo={linkedinInfo} id="experience" />
+      <Skills id="skills" />
+      <Projects githubInfo={githubInfo} id="projects" />
+      <AboutPortfolio id="aboutPortfolio" />
+      <TwoColumns />
+    </LayoutWrapper>
+  </>
 );
 
 Layout.propTypes = {

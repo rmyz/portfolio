@@ -5,7 +5,7 @@ import Title from '../shared/Title';
 import aboutPortfolioData from './aboutPortfolioData';
 import { TextWrapper, Text, Wrapper } from './styles';
 
-const AboutPortfolio = () => {
+const AboutPortfolio = ({ ...rest }) => {
   const renderTextNodes = () => {
     return aboutPortfolioData.map((text, key) => <Text key={key}>{text}</Text>);
   };
@@ -31,7 +31,8 @@ const AboutPortfolio = () => {
       secondColumn={renderFirstColumn()}
       firstColumnWidth="60%"
       secondColumnWidth="40%"
-    ></TwoColumns>
+      {...rest}
+    />
   );
 };
 

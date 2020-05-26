@@ -2,9 +2,9 @@ import PropTypes from 'prop-types';
 
 import { Wrapper, FirstColumnWrapper, SecondColumnWrapper } from './styles';
 
-const TwoColumns = ({ firstColumn, secondColumn, firstColumnWidth, secondColumnWidth, devMode = false }) => {
+const TwoColumns = ({ firstColumn, secondColumn, firstColumnWidth, secondColumnWidth, devMode = false, ...rest }) => {
   return (
-    <Wrapper devMode={devMode}>
+    <Wrapper devMode={devMode} {...rest}>
       <FirstColumnWrapper width={firstColumnWidth} devMode={devMode}>
         {firstColumn}
       </FirstColumnWrapper>

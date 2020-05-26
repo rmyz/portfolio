@@ -21,6 +21,7 @@ import CloudIcon from './CloudIcon';
 import DockerIcon from './DockerIcon';
 import AboutPortfolioIcon from './AboutPortfolioIcon';
 import AboutPortfolioTitleIcon from './AboutPortfolioTitleIcon';
+import MenuIcon from './MenuIcon';
 
 export {
   GithubIcon,
@@ -46,4 +47,5 @@ export {
   DockerIcon,
   AboutPortfolioIcon,
   AboutPortfolioTitleIcon,
+  MenuIcon,
 };

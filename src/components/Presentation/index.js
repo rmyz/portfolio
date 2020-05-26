@@ -38,7 +38,6 @@ const Presentation = () => {
 
   return (
     <TwoColumns
-      id="presentation"
       firstColumnWidth="45%"
       secondColumnWidth="55%"
       firstColumn={firstColumn()}

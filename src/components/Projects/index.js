@@ -8,7 +8,7 @@ import { ProjectsIcon } from '../shared/Icons';
 import { ProjectsWrapper } from './styles';
 import Project from './Project';
 
-const Projects = ({ githubInfo }) => {
+const Projects = ({ githubInfo, ...rest }) => {
   const renderProjects = () => {
     return githubInfo.map((project, key) => {
       const { url, name, description, primaryLanguage, updatedAt, stargazers } = project;
@@ -29,7 +29,7 @@ const Projects = ({ githubInfo }) => {
   };
 
   return (
-    <OneColumn>
+    <OneColumn {...rest}>
       <Title>
         <ProjectsIcon /> PROJECTS
       </Title>

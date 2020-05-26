@@ -5,7 +5,7 @@ import Title from '../shared/Title';
 import aboutMe from './aboutData';
 import { TextWrapper, Text, Wrapper } from './styles';
 
-const About = () => {
+const About = ({ ...rest }) => {
   const renderTextNodes = () => {
     return aboutMe.map((text, key) => <Text key={key}>{text}</Text>);
   };
@@ -31,7 +31,8 @@ const About = () => {
       secondColumn={renderFirstColumn()}
       firstColumnWidth="60%"
       secondColumnWidth="40%"
-    ></TwoColumns>
+      {...rest}
+    />
   );
 };
 

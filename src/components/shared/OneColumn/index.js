@@ -2,8 +2,8 @@ import PropTypes from 'prop-types';
 
 import { Wrapper } from './styles';
 
-const OneColumn = ({ children }) => {
-  return <Wrapper>{children}</Wrapper>;
+const OneColumn = ({ children, ...rest }) => {
+  return <Wrapper {...rest}>{children}</Wrapper>;
 };
 
 OneColumn.propTypes = {

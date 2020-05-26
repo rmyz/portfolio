@@ -7,7 +7,7 @@ import Title from '../shared/Title';
 import Timeline from './Timeline';
 import { Wrapper } from './styles';
 
-const Experience = ({ linkedinInfo }) => {
+const Experience = ({ linkedinInfo, ...rest }) => {
   const renderFirstColumn = () => {
     const { positions } = linkedinInfo;
 
@@ -33,7 +33,7 @@ const Experience = ({ linkedinInfo }) => {
     );
   };
 
-  return <TwoColumns firstColumn={renderFirstColumn()} secondColumn={renderSecondColumn()} />;
+  return <TwoColumns firstColumn={renderFirstColumn()} secondColumn={renderSecondColumn()} {...rest} />;
 };
 
 Experience.propTypes = {
