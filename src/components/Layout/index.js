@@ -16,7 +16,7 @@ const Layout = ({ linkedinInfo, githubInfo }) => (
     <LayoutWrapper data-testid="layoutWrapper">
       <Presentation />
       <About id="aboutMe" />
-      <Experience linkedinInfo={linkedinInfo} id="experience" />
+      <Experience linkedinInfo={linkedinInfo} />
       <Skills id="skills" />
       <Projects githubInfo={githubInfo} id="projects" />
       <AboutPortfolio id="aboutPortfolio" />

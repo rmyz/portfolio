@@ -32,8 +32,8 @@ const NavBar = () => {
       return (
         <>
           <NavigationItem Icon={AboutMeTitleIcon} tooltipId="aboutMeTooltip" tooltipText="About me" href="aboutMe" />
-          <NavigationItem Icon={WorkIcon} tooltipId="workTooltip" tooltipText="Work" href="experience" />
-          <NavigationItem Icon={EducationIcon} tooltipId="educationTooltip" tooltipText="Education" href="experience" />
+          <NavigationItem Icon={WorkIcon} tooltipId="workTooltip" tooltipText="Work" href="work" />
+          <NavigationItem Icon={EducationIcon} tooltipId="educationTooltip" tooltipText="Education" href="education" />
           <NavigationItem Icon={SkillsIcon} tooltipId="skillsTooltip" tooltipText="Skills" href="skills" />
           <NavigationItem Icon={ProjectsIcon} tooltipId="projectsTooltip" tooltipText="Projects" href="projects" />
           <NavigationItem
