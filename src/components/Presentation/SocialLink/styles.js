@@ -9,6 +9,7 @@ export const Circle = styled.a`
   height: 34px;
   border-radius: 50%;
   padding: 5px;
+  margin: 5px;
   cursor: pointer;
 
   ${props => getComputedBackground(props)}

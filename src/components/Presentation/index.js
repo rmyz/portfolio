@@ -38,8 +38,9 @@ const Presentation = () => {
 
   return (
     <TwoColumns
-      firstColumnWidth="45%"
-      secondColumnWidth="55%"
+      isMainPage={true}
+      firstColumnWidth="40%"
+      secondColumnWidth="60%"
       firstColumn={firstColumn()}
       secondColumn={secondColumn()}
     />

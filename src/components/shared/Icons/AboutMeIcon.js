@@ -1,5 +1,5 @@
 const AboutMeIcon = () => (
-  <svg viewBox="0 0 2850 1800" height="500" width="500">
+  <svg viewBox="0 0 2850 1800" height="500" width="500" className="bigIcon">
     <g id="recicle">
       <rect x="374.02" y="1404.27" width="243.99" height="20.8" rx="9.99" style={{ fill: '#fff' }} />
       <polygon

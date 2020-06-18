@@ -1,5 +1,5 @@
 const AboutPortfolioIcon = () => (
-  <svg viewBox="0 0 1400 980" width="500" height="500">
+  <svg viewBox="0 0 1400 980" width="500" height="500" className="bigIcon">
     <g transform="matrix(1.3354918956756592, 0, 0, 1.3354918956756592, -236.6750640869141, -139.29268628644022)">
       <path
         fill="none"

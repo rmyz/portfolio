@@ -12,7 +12,7 @@ const Experience = ({ linkedinInfo, ...rest }) => {
     const { positions } = linkedinInfo;
 
     return (
-      <Wrapper>
+      <Wrapper id="work">
         <Title>
           <WorkIcon /> WORK
         </Title>
@@ -24,7 +24,7 @@ const Experience = ({ linkedinInfo, ...rest }) => {
     const { educations } = linkedinInfo;
 
     return (
-      <Wrapper>
+      <Wrapper id="education">
         <Title>
           <EducationIcon /> EDUCATION
         </Title>
