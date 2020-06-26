@@ -13,7 +13,7 @@ const About = ({ ...rest }) => {
   const renderSecondColumn = () => {
     return (
       <Wrapper>
-        <Title>
+        <Title id="aboutMe">
           <AboutMeTitleIcon /> ABOUT ME
         </Title>
         <TextWrapper>{renderTextNodes()}</TextWrapper>

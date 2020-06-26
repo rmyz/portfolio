@@ -13,7 +13,7 @@ const AboutPortfolio = ({ ...rest }) => {
   const renderSecondColumn = () => {
     return (
       <Wrapper>
-        <Title>
+        <Title id="aboutPortfolio">
           <AboutPortfolioTitleIcon /> ABOUT PORTFOLIO
         </Title>
         <TextWrapper>{renderTextNodes()}</TextWrapper>

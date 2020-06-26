@@ -15,11 +15,11 @@ const Layout = ({ linkedinInfo, githubInfo }) => (
     <NavBar />
     <LayoutWrapper data-testid="layoutWrapper">
       <Presentation />
-      <About id="aboutMe" />
+      <About />
       <Experience linkedinInfo={linkedinInfo} />
-      <Skills id="skills" />
-      <Projects githubInfo={githubInfo} id="projects" />
-      <AboutPortfolio id="aboutPortfolio" />
+      <Skills />
+      <Projects githubInfo={githubInfo} />
+      <AboutPortfolio />
     </LayoutWrapper>
   </>
 );

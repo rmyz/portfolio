@@ -30,7 +30,7 @@ const Projects = ({ githubInfo, ...rest }) => {
 
   return (
     <OneColumn {...rest}>
-      <Title>
+      <Title id="projects">
         <ProjectsIcon /> PROJECTS
       </Title>
       <ProjectsWrapper>{renderProjects()}</ProjectsWrapper>
