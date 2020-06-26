@@ -17,6 +17,7 @@ export const Wrapper = styled.nav`
     top: auto;
     bottom: auto;
     flex-direction: row;
+    background: #121212;
   }
 `;
 
