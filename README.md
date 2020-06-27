@@ -9,3 +9,10 @@ The Frontend part is a Progressive Web App, done with Next.js, a React framework
 On the other hand, the Backend is an Express server, that retrieves data from Github's GraphQL API, uses puppeteer, a web scraper, to get information from my Linkedin profile, and then saves it to Firebase to be able to retrieve it faster, the testing is also done with Jest.
 
 Last part and probably my favorite, the infrastructure, both projects have a TravisCI pipeline, that triggers on every pull request or merge into the master branch, that deploys to Vercel, for the Frontend, and Heroku for my Node.js server.
+
+## TO-DO
+
+- [ ] Section to download CV as PDF
+- [ ] Convert to Progressive Web App
+- [ ] Add animations
+- [ ] Refactor code
