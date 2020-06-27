@@ -13,7 +13,7 @@ const Skills = ({ ...rest }) => {
 
   return (
     <OneColumn {...rest}>
-      <Title>
+      <Title id="skills">
         <SkillsIcon /> SKILLS
       </Title>
       <SkillsWrapper>{renderSkills()}</SkillsWrapper>

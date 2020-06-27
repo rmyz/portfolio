@@ -1,12 +1,17 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  width: 450px;
+  width: 45%;
+  min-width: 285px;
   display: flex;
   padding: 16px 16px 8px;
   margin: 16px;
   border: 0.5px solid hsla(0, 0%, 50.2%, 0.1);
   border-radius: 10px;
+
+  @media (max-width: 940px) {
+    width: 350px;
+  }
 `;
 
 export const TextWrapper = styled.div`

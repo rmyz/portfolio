@@ -55,6 +55,6 @@ export const Image = styled.img`
 
   @media (max-width: 940px) {
     max-width: 50%;
-    min-width: 300px;
+    min-width: 250px;
   }
 `;

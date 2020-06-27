@@ -8,7 +8,7 @@ const NavigationItem = ({ tooltipText, tooltipId, Icon, href }) => {
     const element = document.getElementById(href);
 
     window.scrollTo({
-      top: element.offsetTop,
+      top: element.offsetTop - 60,
       left: 0,
       behavior: 'smooth',
     });

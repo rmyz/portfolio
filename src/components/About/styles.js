@@ -3,6 +3,10 @@ import styled from 'styled-components';
 export const TextWrapper = styled.span`
   text-align: justify;
   white-space: break-spaces;
+
+  @media (max-width: 940px) {
+    text-align: initial;
+  }
 `;
 
 export const Text = styled.p`

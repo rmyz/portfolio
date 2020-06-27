@@ -2,8 +2,8 @@ import PropTypes from 'prop-types';
 
 import { StyledTitle } from './styles';
 
-const Title = ({ children }) => {
-  return <StyledTitle>{children}</StyledTitle>;
+const Title = ({ children, ...rest }) => {
+  return <StyledTitle {...rest}>{children}</StyledTitle>;
 };
 
 Title.propTypes = {

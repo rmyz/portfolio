@@ -4,6 +4,10 @@ export const TextWrapper = styled.span`
   text-align: justify;
   white-space: break-spaces;
   margin-right: 48px;
+
+  @media (max-width: 940px) {
+    text-align: initial;
+  }
 `;
 
 export const Text = styled.p`
