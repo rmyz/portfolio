@@ -36,6 +36,7 @@
   "dependencies": {
     "dayjs": "1.8.29",
     "next": "9.4.4",
+    "next-pwa": "3.0.3",
     "polished": "3.6.5",
     "prop-types": "15.7.2",
     "react": "16.13.1",
