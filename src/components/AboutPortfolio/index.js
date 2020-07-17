@@ -1,3 +1,6 @@
+import { useInView } from 'react-intersection-observer';
+import { Animate } from 'react-simple-animate';
+
 import TwoColumns from '../shared/TwoColumns';
 import { AboutPortfolioIcon, AboutPortfolioTitleIcon } from '../shared/Icons';
 import Title from '../shared/Title';
@@ -6,23 +9,45 @@ import aboutPortfolioData from './aboutPortfolioData';
 import { TextWrapper, Text, Wrapper } from './styles';
 
 const AboutPortfolio = ({ ...rest }) => {
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+  });
+
   const renderTextNodes = () => {
     return aboutPortfolioData.map((text, key) => <Text key={key}>{text}</Text>);
   };
 
   const renderSecondColumn = () => {
     return (
-      <Wrapper>
+      <Wrapper ref={ref}>
         <Title id="aboutPortfolio">
           <AboutPortfolioTitleIcon /> ABOUT PORTFOLIO
         </Title>
-        <TextWrapper>{renderTextNodes()}</TextWrapper>
+        <Animate
+          play={inView}
+          duration="0.25"
+          delay="0.3"
+          start={{ transform: 'translateX(-1600px)' }}
+          end={{ transform: 'translateX(0px)' }}
+          complete={{ transition: 'all .25s linear 0s' }}
+          render={({ style }) => <TextWrapper style={style}>{renderTextNodes()}</TextWrapper>}
+        ></Animate>
       </Wrapper>
     );
   };
 
   const renderFirstColumn = () => {
-    return <AboutPortfolioIcon />;
+    return (
+      <Animate
+        play={inView}
+        duration="0.25"
+        delay="0.3"
+        start={{ transform: 'translateX(800px)' }}
+        end={{ transform: 'translateX(0px)' }}
+        complete={{ transition: 'all .25s linear 0s' }}
+        render={({ style }) => <AboutPortfolioIcon style={style} />}
+      ></Animate>
+    );
   };
 
   return (

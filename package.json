@@ -34,17 +34,19 @@
     ]
   },
   "dependencies": {
-    "dayjs": "1.8.28",
+    "dayjs": "1.8.29",
     "next": "9.4.4",
     "polished": "3.6.5",
     "prop-types": "15.7.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
+    "react-intersection-observer": "8.26.2",
+    "react-simple-animate": "3.3.9",
     "react-tooltip": "4.2.7",
     "styled-components": "5.1.1"
   },
   "devDependencies": {
-    "@babel/core": "7.10.3",
+    "@babel/core": "7.10.5",
     "@rmyzdev/react-linter": "2.0.0",
     "babel-plugin-styled-components": "1.10.7",
     "husky": "4.2.5",
