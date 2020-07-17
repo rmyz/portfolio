@@ -1,5 +1,7 @@
-const AboutPortfolioIcon = () => (
-  <svg viewBox="0 0 1400 980" width="500" height="500" className="bigIcon">
+import PropTypes from 'prop-types';
+
+const AboutPortfolioIcon = ({ style }) => (
+  <svg viewBox="0 0 1400 980" width="500" height="500" className="bigIcon" style={style}>
     <g transform="matrix(1.3354918956756592, 0, 0, 1.3354918956756592, -236.6750640869141, -139.29268628644022)">
       <path
         fill="none"
@@ -471,5 +473,9 @@ const AboutPortfolioIcon = () => (
     </g>
   </svg>
 );
+
+AboutPortfolioIcon.propTypes = {
+  style: PropTypes.object,
+};
 
 export default AboutPortfolioIcon;
