@@ -20,7 +20,7 @@ const HomePage = props => {
         <meta name="screen-orientation" content="portrait"></meta>
         <link href="/manifest.json" rel="manifest"></link>
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-        <meta charset="utf-8"></meta>
+        <meta charSet="utf-8"></meta>
         <meta
           name="viewport"
           content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"

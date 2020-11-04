@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Image from 'next/image';
 
 export const Wrapper = styled.div`
   display: flex;
@@ -49,7 +50,7 @@ export const IconWrapper = styled.div`
   }
 `;
 
-export const Image = styled.img`
+export const StyledImage = styled(Image)`
   max-width: 80%;
   min-width: 350px;
 

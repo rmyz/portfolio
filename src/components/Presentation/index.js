@@ -5,7 +5,7 @@ import TwoColumns from '../shared/TwoColumns';
 import { GithubIcon, LinkedinIcon, GmailIcon, VSCodeIcon } from '../shared/Icons';
 
 import SocialLink from './SocialLink';
-import { Wrapper, Title, SubTitle, IconWrapper, Image } from './styles';
+import { Wrapper, Title, SubTitle, IconWrapper, StyledImage } from './styles';
 
 const Presentation = () => {
   const [ref, inView] = useInView({
@@ -21,7 +21,7 @@ const Presentation = () => {
         start={{ opacity: 0 }}
         end={{ opacity: 1 }}
         complete={{ transition: 'all .25s linear 0s' }}
-        render={({ style }) => <Image style={style} src="/me.png" alt="me" />}
+        render={({ style }) => <StyledImage width="420px" height="400px" style={style} src="/me.png" alt="me" />}
       ></Animate>
     );
   };
