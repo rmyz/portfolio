@@ -12,7 +12,7 @@ Last part and probably my favorite, the infrastructure, both projects have a Tra
 
 ## TO-DO
 
+- [x] Add animations
+- [x] Convert to Progressive Web App
 - [ ] Section to download CV as PDF
-- [ ] Convert to Progressive Web App
-- [ ] Add animations
-- [ ] Refactor code
+- [ ] Improve code
